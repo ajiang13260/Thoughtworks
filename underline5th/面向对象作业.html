@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>面向对象作业</title>
+        <style type="text/css">
+           body {
+                padding:0;
+                margin: 0px
+            }
+            #box {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: red
+            }
+
+            .line {
+                position: absolute;
+                border: 0.5px dotted red;
+            }
+
+            .a {
+                left: 100px;
+                height: 100%;
+                
+            }
+
+            .b {
+                top: 100px;
+                width: 100%;
+            }
+          </style>
+    </head>
+    <body>
+        <p class='line a'></p>
+        <p class='line b'></p>
+        <div id="box"></div>
+        <script type="text/javascript">
+            var box = document.getElementById("box");
+	        console.log('box: '+ box.offsetLeft +','+ box.offsetTop);
+            
+            
+
+            box.onmousedown = function(mouse){
+                
+                x = mouse.clientX - box.offsetLeft;
+                y = mouse.clientY - box.offsetTop;
+                console.log('mouse: ' + mouse.clientX +',' +mouse.clientY)
+                document.onmousemove = function(mouse){
+                    movex = mouse.clientX;
+                    movey = mouse.clientY;
+                    console.log('movemouse: ' + mouse.clientX +',' +mouse.clientY);
+                    box.style.left = (mouse.clientX - x ) + 'px';
+                    box.style.top = (mouse.clientY - y ) + 'px';
+                }
+                document.onmouseup = function(mouse){
+                    document.onmousemove = null;
+                   
+                }
+            }      
+                
+      </script>
+      </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            .content {        
+                float: left;       
+                width: 100%; 
+                background-color:red;
+                }  
+                .left {       
+                float: left;        
+                width: 190px;        
+                margin-left: -100%;               
+                position: relative;  
+                left: -190px;  
+                background-color: gray;  
+            }   
+            .right {        
+                float: left;        
+                width: 230px;        
+                margin-left: -230px; 
+                position: relative; 
+                right: -230px;  
+                background-color: gray;
+                }
+            .body-content {        
+                padding: 0 230px 0 190px;   
+                }
+        </style>
+    </head>
+    <body>
+        <div class="body-content">
+            <div class="content">content</div>
+            <div class="left">body-left</div>
+            <div class="right">body-right</div>
+        </div>
+    </body>
+</html>

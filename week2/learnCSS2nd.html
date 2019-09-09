@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+        .container{
+            /* position: relative; */
+            border: 5px blue solid; 
+            display: -webkit-flex;
+            display: flex;
+        }
+        /* 加入媒体查询后，将窗口缩小会出现除了最外层container之外
+        的所有边框全都消失的状况 */
+        @media screen and (min-width: 600px){
+            nav{
+                /* position: absolute;
+                left: 0px; */
+                /* float: left; */
+                /* display: inline-block; */
+                /* vertical-align: top; */
+                /* width: 25%; */
+                width: 200px;
+                border: 5px pink solid;
+            }
+            .column{
+                /* display: inline-block; */
+                /* vertical-align: top; */
+                /* margin-left: 26%; */
+                /* width: 72.5%; */
+                -webkit-flex: 1;
+                flex: 1;
+                border: solid pink 5px;
+            }
+            section{
+                /* position is static by default */
+                /* float: right; */
+                /* margin-left: 25%; */
+                /* width: 75%; */
+                /* margin-left: 200px;  */
+                border: solid 5px yellow;
+            }
+            
+        }
+        @media screen and (max-width: 599px){
+            nav li{
+                display: inline;
+            }
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 70px;
+            background-color: white;
+            /* width: 100%; */
+            border: solid 5px green;
+        }
+        body{
+            margin-bottom: 120px;
+        }
+  
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft List</li>
+                <li>Hours</li>
+                <li>Directions</li>
+                <li>Contact</li>
+            </nav>
+            <div class="column">
+                <section>section的margin-left样式确保了有足够的空间容纳nav元素。</section>
+                <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+                <section>注意观察当你调整浏览器窗口时发生了什么。效果很赞！</section>
+            </div>
+        </div>
+        <footer>如果你使用了一个固定定位的页眉或页脚，确保有足够的空间来显示它们！我在 body 上面加了 margin-bottom 。</footer>
+    </body>
+</html>

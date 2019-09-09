@@ -1,0 +1,62 @@
+<!--第一题-->
+<html>
+	<body>
+
+		<!-- HTML -->
+		<p id='test' class='title'>Hello world!</p>
+
+		<!-- CSS -->
+		<style>
+			/*p{
+				color:red;
+				text-align: center;
+				font-weight:bold;
+			}*/
+
+			/*.title{
+				color:red;
+				text-align: center;
+				font-weight:bold;
+			}*/
+			#test{
+				color:red;
+				text-align: center;
+				font-weight:bold;
+			}
+		</style>
+
+	</body>
+</html>
+
+<!--第三题-->
+<html>
+	<!--HTML-->
+	<body>
+		<div title="demo">demo</div>
+		<div>0010</div>
+		<div title="demo0011">demo0011</div>
+		<div>0100</div>
+		<div title="zh0101">zh0101</div>
+		<div>0110</div>
+		<div title="zh">zh</div>
+		<div>1000</div>
+		<div title="10demo01">10demo01</div>
+		<div>1010</div>
+	</body>
+
+	<!--CSS-->
+		<style>
+			div[title]{
+				color: brown;
+			}
+			div[title="demo"]{
+				font-weight: bold;
+			}
+			div[title*="demo"]{
+				background: blue;
+			}
+			div[title^="zh"]{
+				color: chocolate;
+			}
+		</style>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+/* 我是注释 */
+<!--我是注释-->
+	<form action="/echo" method="POST">
+		<p>账号：<input type="text" name="username" placeholder="请输入想注册的账号"/></p>
+		<p>密码：<input type="password" name="password" placeholder="请设置您账号的登入密码"/></p>
+		<p>重复密码：<input type="password" name="password" placeholder="再次输入密码"/></p>
+		<p>验证码：<input type="text" name="verification code" placeholder="请输入六位验证码"/></p>
+		<p>性别
+			<input type="radio" name="sex" value="男" checked>男
+			<input type="radio" name="sex" value="女">女</p>
+		<p>玩过什么游戏
+			<input type="checkbox" name="game" value="英雄联盟">英雄联盟
+			<input type="checkbox" name="game" value="穿越火线">穿越火线
+			<input type="checkbox" name="game" value="魔兽世界">魔兽世界
+			<input type="checkbox" name="game" value="守望先锋">守望先锋
+			</p>
+		<p><select name="year">
+			<option value="year">年</option>
+			<option value="year">年</option>
+		</select></p>
+		<button type="button">按钮</button>
+		<button type="submit">提交</button>
+		<button type="reset">重置</button>
+	</form>
+</body>
+</html>

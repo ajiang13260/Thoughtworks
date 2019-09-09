@@ -1,0 +1,36 @@
+<html>
+<head>
+    <!--问题一：没有解决右侧边栏不覆盖主栏文字的问题
+        解决方式：在右侧边栏增加
+            position: relative;
+            right: -100px;-->
+    <!-- 问题二：内容溢出导致出现进度条，内容无法在窗口完全显示 -->
+    <style>
+        .left{
+            float: left;
+            width: 100%;
+            height: 100%;
+            margin: 0 -100px 0 0;
+            background-color: burlywood;
+        }
+        .right{
+            float: left;
+            width: 100px;
+            height: 100%;
+            margin-right: -100%;
+            color: white;
+            background-color: brown;
+            position: relative;
+            right: -100px;
+        }   
+    </style>
+</head>
+<body>
+    <div class="left">
+            我是一个自适应宽度的左边输入框，我支持自动换行不会被右边导航栏所覆盖内容。
+    </div>
+    <div class="right">
+        我是固定右边导航栏
+    </div>    
+</body>
+</html>

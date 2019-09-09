@@ -1,0 +1,93 @@
+ <!-- 伪类的代码示例 -->
+   <!-- HTML -->
+   <nav>
+        <ul>
+          <li><a href="http://w3.org">W3C</a>
+          <li><a href="http://example.com">example.com</a>
+          <li><a href="http://www.360.com">360</a>
+        </ul>
+      </nav>
+      
+      <label>搜索：<input name="q" type="search"></label>
+      
+      <!-- CSS -->
+      <style>
+        a:link {
+          color: black;
+        }
+        a:visited {
+          color: gray;
+        }
+        a:hover {
+          color: orange;
+        }
+        a:active {
+          color: red;
+        }
+        :focus {
+          outline: 2px solid red;
+        }
+      </style>
+<div>
+<h1>这是h1</h1>
+<h2>这是h2</h2>
+
+<!-- CSS -->
+<style>
+h1::before{
+    content:"h1后插入内容"
+}
+h2::after{
+    content:"none"
+}
+</style>
+</div>
+
+<html>
+<div>
+  <!-- HTML -->
+  <p class="warning">这是一条警告信息</p>
+  <div class="warning icon">这是另外一条警告信息</div>
+  
+  <!-- CSS -->
+  <style>
+  /* 标签选择器和类选择器组合 */
+  p.warning { color: orange; }
+  </style>
+
+  <!-- HTML -->
+  <article>
+        <h1>一级标题</h1>
+        <p>第一段第一段。</p>
+        <section>
+          <h2>二级标题</h2>
+          <p>第二段第二段。</p>
+        </section>
+      </article>
+      
+      <!-- CSS -->
+      <style>
+        /* 后代选择器 */
+        /* 选中 article 标签下的 所有 p 元素 */
+        article p {
+          color: coral;
+        }
+        /* 选中 article 标签下的 section 标签下的 所有 h2 元素*/
+        article section h2 {
+          border-bottom: 1px dashed #999;
+        }
+      </style>
+</div>
+<style>
+    /* 下面的选择器将会同时将CSS规则应用在body/h1/h2/h3/h4/h5/h6/ul/ol/li上 */
+    /*body, h1, h2, h3, h4, h5, h6, ul, ol, li {
+        margin: 0;
+        padding: 0;
+      }
+      
+      [type="checkbox"], [type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+      }*/
+</style>
+</html>

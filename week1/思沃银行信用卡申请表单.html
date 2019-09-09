@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>思沃银行信用卡</title>
+</head>
+<body>
+    <center>思沃银行信用卡申请表</center>
+    <form>
+        <center>
+        <p>1 身份验证</p>
+        *请选择您所在的省/市
+        <select name="province">
+            <option value="请选择" selected="selected">请选择</option>
+            <option value="北京市">北京市</option>
+            <option value="天津市">天津市</option>
+            <option value="河北省">河北省</option>
+            <option value="湖北省">湖北省</option>
+            <option value="山东省">山东省</option>
+          </select><br>
+        *姓<br>
+            <input type="text" name="lName"><br>
+        *名<br>
+            <input type="text" name="fName"><br>
+        *身份证号<br>
+            <input type="text" name="ID"><br>
+
+        <p>2 个人信息填写</p>
+        *家庭地址<br>
+            <input type="text" name="fAddress"><br>
+        *住宅邮编<br>
+            <input type="text" name="zipcode"><br>
+        *教育程度<br>
+            <input type="radio" name="education" value="初中及以下" checked>初中及以下<br>
+            <input type="radio" name="education" value="高中" checked>高中<br>
+            <input type="radio" name="education" value="本科" checked>本科<br>
+            <input type="radio" name="education" value="硕士" checked>硕士<br>
+            <input type="radio" name="education" value="博士及以上">博士及以上<br>
+        *婚姻状况<br>
+            <input type="radio" name="marital" value="未婚" checked>未婚
+            <input type="radio" name="marital" value="已婚" checked>已婚<br>
+
+        <p>3 您的单位信息</p>
+        *单位名称<br>
+            <input type="text" name="company"><br>
+        <p>单位地址<br>
+        *省/直辖市
+            <select name="province">
+                <option value="请选择" selected="selected">请选择</option>
+                <option value="北京市">北京市</option>
+                <option value="天津市">天津市</option>
+                <option value="河北省">河北省</option>
+                <option value="湖北省">湖北省</option>
+                <option value="山东省">山东省</option>
+            </select><br>
+        *市/区<br>
+            <input type="text" name="wCity"><br>
+        *单位详细地址<br>
+            <input type="text" name="wAddress"><br>
+        </p>
+
+        <p>4 账号信息
+        *用户名<br>
+            <input type="text" name="username" placeholder="请输入用户名"><br>
+        *密码<br>
+            <input type="password" name="password" placeholder="请输入密码"><br>
+        </p>
+        <p>
+        <button type="submit">注册</button>
+        <button type="reset">重置</button>
+        </p>
+        <center>
+    </form>   
+</body>    
+</html>

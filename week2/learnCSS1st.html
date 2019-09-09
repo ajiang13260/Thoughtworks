@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <style>
+            * {
+               -webkit-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                       box-sizing: border-box;
+            }
+            #main {
+                max-width: 600px;
+                margin: 0 auto; 
+                border: 1px red solid;
+            }
+            .simple {
+                width: 500px;
+                margin: 20px auto;
+                border: 1px red solid;
+            }
+
+            .fancy {
+                width: 500px;
+                margin: 20px auto;
+                padding: 50px;
+                border-width: 10px;
+                border: red solid;
+            }
+            .static {
+                position: static;
+                border: 1px red solid;
+            }
+            .relative1 {
+                position: relative;
+                border: 1px red solid;
+            }
+            .relative2 {
+                position: relative;
+                top: -20px;
+                left: 20px;
+                background-color: white;
+                width: 500px;
+                border: 1px green solid;
+            }
+            .fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 200px;
+                background-color: white;
+                border: 2px yellow solid;
+            }
+            .relative {
+                position: relative;
+                width: 600px;
+                height: 400px;
+                border: 2px black solid;
+            }
+            .absolute {
+                position: absolute;
+                top: 120px;
+                right: 0;
+                width: 300px;
+                height: 200px;
+                border: 2px grey solid;
+            }
+            img{
+                float:right;
+                margin: 0 0 1em 1em;
+                width: 50%;
+            }
+            .box{
+                width: 80%;
+                margin: 3px auto; 
+                background: grey;
+                color: purple;
+                overflow: auto;
+            }
+            .fly {
+                float: left;
+                width: 200px;
+                height: 100px;
+                margin: 1em;
+                border: solid 3px orange;
+            }
+            section{
+                border: solid 3px orange;
+                clear: left;
+            }
+            .box1 {
+                /* float: left; */
+                display: inline-block;
+                width: 200px;
+                height: 100px;
+                margin: 1em;
+                border: 2px blue solid;
+            }
+            .after-box {
+                /* clear: left; */
+                border: 2px yellow solid;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="main">main</div>
+        <div class="simple">simple</div>
+        <div class="fancy">fancy</div>
+        <div class="static">static</div>
+        <div class="relative1">relative1</div>
+        <div class="relative2">relative2</div>
+        <div class="fixed">fixed</div>
+        <div class="relative">relative
+                <div class="absolute">absolute</div>
+        </div>
+        <div class="box">
+            <img src="picture/仓鼠.png" alt="仓鼠.png">
+            不......这个图片比包含它的元素还高， 而且它是浮动的，于是它就溢出到了容器外面！        </div>
+        <div class="fly">我感觉好像我在漂浮</div>
+        <section>在这个例子中， section 元素实际上是在 div 之后的（译注：DOM结构上）。然而 div 元素是浮动到左边的，于是 section 中的文字就围绕了 div ，并且 section 元素包围了整个元素。如果我们想让 section 显示在浮动元素之后呢？</section>
+        <div class="box1">我在浮动！</div>
+        <div class="box1">我在浮动！</div>
+        <div class="box1">我在浮动！</div>
+        <div class="box1">我在浮动！</div>
+        <div class="box1">我在浮动！</div>
+        <div class="after-box">我是用clear，所以我不会浮动到上面那堆盒子的旁边</div>
+        
+    </body>
+</html>
