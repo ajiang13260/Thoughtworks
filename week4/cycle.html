@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num=0;
+    for(var i=1 ;i<10;i++){
+        for(var j=1;j<10;j++){
+            num=i*j;
+            if(num/10<1){
+                num=" "+i*j;
+            }
+            if(j<=i) {
+                document.write(j + "*" + i + "=" + num + " ");
+            }
+        }
+        document.write("<br>");
+    }
+
+</script>
+</body>
+</html>
+--------------------- 
+作者：Bot_阿难 
+来源：CSDN 
+原文：https://blog.csdn.net/Ma_Wenkai/article/details/80159487 
+版权声明：本文为博主原创文章，转载请附上博文链接！
